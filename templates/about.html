@@ -1,0 +1,271 @@
+{% extends '_base.html' %}
+
+{% load static %}
+
+{% block title %}About{% endblock title %}
+
+{% block content %}
+
+{% include '_navbar.html' %}
+<style>
+    .u-section-1 .u-sheet-1 {
+        min-height: 628px;
+    }
+
+    .u-section-1 .u-layout-wrap-1 {
+        width: 890px;
+        margin: 60px auto 60px 125px;
+    }
+
+    .u-section-1 .u-image-1 {
+        min-height: 539px;
+        background-image: url(../static/image/img\ \(12\).jpg);
+        background-position: 50% 50%;
+    }
+
+    .u-section-1 .u-container-layout-1 {
+        padding: 30px;
+    }
+
+    .u-section-1 .u-layout-cell-2 {
+        min-height: 539px;
+    }
+
+    .u-section-1 .u-container-layout-2 {
+        padding: 30px;
+    }
+
+    .u-section-1 .u-group-1 {
+        width: 537px;
+        min-height: 382px;
+        background-image: none;
+        margin: 45px auto 0 -122px;
+    }
+
+    .u-section-1 .u-container-layout-3 {
+        padding: 30px 60px;
+    }
+
+    .u-section-1 .u-text-1 {
+        margin: 0;
+    }
+
+    .u-section-1 .u-text-2 {
+        margin: 20px 0 0;
+    }
+
+    .u-section-1 .u-btn-1 {
+        margin: 30px 0 0;
+    }
+
+    @media (max-width: 1199px) {
+        .u-section-1 .u-layout-wrap-1 {
+            width: 820px;
+            margin-left: 60px;
+        }
+
+        .u-section-1 .u-group-1 {
+            width: 443px;
+            margin-left: -101px;
+        }
+    }
+
+    @media (max-width: 991px) {
+        .u-section-1 .u-sheet-1 {
+            min-height: 580px;
+        }
+
+        .u-section-1 .u-layout-wrap-1 {
+            margin-right: initial;
+            margin-left: initial;
+            width: auto;
+        }
+
+        .u-section-1 .u-image-1 {
+            min-height: 491px;
+        }
+
+        .u-section-1 .u-layout-cell-2 {
+            min-height: 491px;
+        }
+
+        .u-section-1 .u-group-1 {
+            width: 416px;
+            margin-top: 38px;
+            margin-left: -86px;
+        }
+
+        .u-section-1 .u-container-layout-3 {
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+    }
+
+    @media (max-width: 767px) {
+        .u-section-1 .u-sheet-1 {
+            min-height: auto;
+        }
+
+        .u-section-1 .u-container-layout-1 {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .u-section-1 .u-layout-cell-2 {
+            min-height: auto;
+        }
+
+        .u-section-1 .u-container-layout-2 {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .u-section-1 .u-group-1 {
+            width: 390px;
+            margin-top: -113px;
+            margin-left: auto;
+        }
+
+        .u-section-1 .u-container-layout-3 {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+    }
+
+    @media (max-width: 575px) {
+        .u-section-1 .u-group-1 {
+            width: 302px;
+        }
+    }
+
+    .u-section-2 {
+        background-image: none;
+    }
+
+    .u-section-2 .u-sheet-1 {
+        min-height: 727px;
+    }
+
+    .u-section-2 .u-image-1 {
+        width: 300px;
+        height: 300px;
+        object-position: 90% 50%;
+        background-position: 50% 50%;
+        background-image: url(../static/image/self/NHPX3597.JPG);
+        margin: 60px auto 0;
+    }
+
+    .u-section-2 .u-text-1 {
+        width: 740px;
+        margin: 30px auto 0;
+    }
+
+    .u-section-2 .u-text-2 {
+        font-size: 0.875rem;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        width: 740px;
+        margin: 20px auto 0;
+    }
+
+    .u-section-2 .u-text-3 {
+        width: 740px;
+        margin: 20px auto 0;
+    }
+
+    .u-section-2 .u-btn-1 {
+        margin: 30px auto 0;
+    }
+
+    .u-section-2 .u-social-icons-1 {
+        height: 48px;
+        min-height: 16px;
+        width: 106px;
+        min-width: 42px;
+        margin: 30px auto 60px;
+    }
+
+    .u-section-2 .u-icon-1 {
+        color: rgb(59, 89, 152) !important;
+        height: 100%;
+    }
+
+    .u-section-2 .u-icon-2 {
+        color: rgb(197, 54, 164) !important;
+        height: 100%;
+    }
+
+    @media (max-width: 991px) {
+        .u-section-2 .u-text-1 {
+            width: 720px;
+        }
+
+        .u-section-2 .u-text-2 {
+            width: 720px;
+        }
+
+        .u-section-2 .u-text-3 {
+            width: 720px;
+        }
+    }
+
+    @media (max-width: 767px) {
+        .u-section-2 .u-text-1 {
+            width: 540px;
+        }
+
+        .u-section-2 .u-text-2 {
+            width: 540px;
+        }
+
+        .u-section-2 .u-text-3 {
+            width: 540px;
+        }
+    }
+
+    @media (max-width: 575px) {
+        .u-section-2 .u-text-1 {
+            width: 340px;
+        }
+
+        .u-section-2 .u-text-2 {
+            width: 340px;
+        }
+
+        .u-section-2 .u-text-3 {
+            width: 340px;
+        }
+    }
+</style>
+
+<section class="u-align-center u-clearfix u-section-2" id="sec-fc48">
+    <div class="u-clearfix u-sheet u-sheet-1">
+        <div alt="" class="u-image u-image-circle u-image-1"></div>
+        <h3 class="u-text u-text-1">Made By Me</h3>
+        <h5 class="u-text u-text-2">Onyekwelu Ifeanyi</h5>
+        <p class="u-text u-text-3">Full-Stack Developer &amp; UI/UX Designer</p>
+        <a href="" class="u-btn u-button-style u-btn-1">Contact Me</a>
+        <div class="u-social-icons u-spacing-10 u-social-icons-1">
+            <a class="u-social-url" title="facebook" target="_blank" href="https://www.facebook.com/profile.php?id=100079424268640"><span class="u-icon u-social-facebook u-social-icon u-icon-1"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 112 112" style="">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-0fef"></use>
+                    </svg><svg class="u-svg-content" viewBox="0 0 112 112" x="0" y="0" id="svg-0fef">
+                        <path fill="currentColor" d="M75.5,28.8H65.4c-1.5,0-4,0.9-4,4.3v9.4h13.9l-1.5,15.8H61.4v45.1H42.8V58.3h-8.8V42.4h8.8V32.2
+c0-7.4,3.4-18.8,18.8-18.8h13.8v15.4H75.5z"></path>
+                    </svg></span>
+            </a>
+            <a class="u-social-url" title="instagram" target="_blank" href="https://www.instagram.com/iam_onyekwelu_ifeanyi/"><span class="u-icon u-social-icon u-social-instagram u-icon-2"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 112 112" style="">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-a6ce"></use>
+                    </svg><svg class="u-svg-content" viewBox="0 0 112 112" x="0" y="0" id="svg-a6ce">
+                        <path fill="currentColor" d="M55.9,32.9c-12.8,0-23.2,10.4-23.2,23.2s10.4,23.2,23.2,23.2s23.2-10.4,23.2-23.2S68.7,32.9,55.9,32.9z
+	 M55.9,69.4c-7.4,0-13.3-6-13.3-13.3c-0.1-7.4,6-13.3,13.3-13.3s13.3,6,13.3,13.3C69.3,63.5,63.3,69.4,55.9,69.4z"></path>
+                        <path fill="#FFFFFF" d="M79.7,26.8c-3,0-5.4,2.5-5.4,5.4s2.5,5.4,5.4,5.4c3,0,5.4-2.5,5.4-5.4S82.7,26.8,79.7,26.8z"></path>
+                        <path fill="currentColor" d="M78.2,11H33.5C21,11,10.8,21.3,10.8,33.7v44.7c0,12.6,10.2,22.8,22.7,22.8h44.7c12.6,0,22.7-10.2,22.7-22.7
+	V33.7C100.8,21.1,90.6,11,78.2,11z M91,78.4c0,7.1-5.8,12.8-12.8,12.8H33.5c-7.1,0-12.8-5.8-12.8-12.8V33.7
+	c0-7.1,5.8-12.8,12.8-12.8h44.7c7.1,0,12.8,5.8,12.8,12.8V78.4z"></path>
+                    </svg></span>
+            </a>
+        </div>
+    </div>
+</section>
+
+{% endblock content %}

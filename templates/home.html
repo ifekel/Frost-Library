@@ -1,0 +1,431 @@
+{% extends '_base.html' %}
+
+{% load static %}
+
+{% block title %}Home{% endblock title %}
+
+{% block content %}
+
+{% include '_navbar.html' %}
+
+<section class="u-carousel u-slide u-block-e1f4-1" id="carousel_6b55" data-interval="5000" data-u-ride="carousel">
+    <ol class="u-absolute-hcenter u-carousel-indicators u-block-e1f4-2">
+        <li data-u-target="#carousel_6b55" class="u-active u-grey-30" data-u-slide-to="0"></li>
+        <li data-u-target="#carousel_6b55" class="u-grey-30" data-u-slide-to="1"></li>
+        <li data-u-target="#carousel_6b55" class="u-grey-30" data-u-slide-to="2"></li>
+    </ol>
+    <div class="u-carousel-inner" role="listbox">
+        <div class="u-active u-align-center u-carousel-item u-clearfix u-palette-1-dark-3 u-section-1-1" src="">
+            <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+                <h1 class="u-text u-text-default u-title u-text-2">Time To Get Smarter</h1>
+                <a href="{% url 'account_signup' %}" class="u-btn u-button-style u-palette-2-base u-btn-1">Get Started</a>
+            </div>
+        </div>
+        <div class="u-align-center u-carousel-item u-clearfix u-palette-4-dark-3 u-section-1-2" src="">
+            <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+                <h1 class="u-text u-text-default u-title u-text-2">Readers Are Leaders</h1>
+                <a href="{% url 'book_list' %}" class="u-btn u-button-style u-palette-2-base u-btn-1">View Our Books</a>
+            </div>
+        </div>
+        <div class="u-align-center u-carousel-item u-clearfix u-palette-4-dark-3 u-section-1-3" src="">
+            <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+                <h1 class="u-text u-text-default u-title u-text-2">Your Knowledge Is Our Priority</h1>
+            </div>
+        </div>
+    </div>
+    <a class="u-absolute-vcenter u-border-3 u-border-white u-carousel-control u-carousel-control-prev u-icon-circle u-text-grey-30 u-block-e1f4-3" href="#carousel_6b55" role="button" data-u-slide="prev">
+        <span aria-hidden="true">
+            <svg class="u-svg-link" viewBox="0 0 477.175 477.175">
+                <path d="M145.188,238.575l215.5-215.5c5.3-5.3,5.3-13.8,0-19.1s-13.8-5.3-19.1,0l-225.1,225.1c-5.3,5.3-5.3,13.8,0,19.1l225.1,225
+                    c2.6,2.6,6.1,4,9.5,4s6.9-1.3,9.5-4c5.3-5.3,5.3-13.8,0-19.1L145.188,238.575z"></path>
+            </svg>
+        </span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="u-absolute-vcenter u-border-3 u-border-white u-carousel-control u-carousel-control-next u-icon-circle u-text-grey-30 u-block-e1f4-4" href="#carousel_6b55" role="button" data-u-slide="next">
+        <span aria-hidden="true">
+            <svg class="u-svg-link" viewBox="0 0 477.175 477.175">
+                <path d="M360.731,229.075l-225.1-225.1c-5.3-5.3-13.8-5.3-19.1,0s-5.3,13.8,0,19.1l215.5,215.5l-215.5,215.5
+                    c-5.3,5.3-5.3,13.8,0,19.1c2.6,2.6,6.1,4,9.5,4c3.4,0,6.9-1.3,9.5-4l225.1-225.1C365.931,242.875,365.931,234.275,360.731,229.075z"></path>
+            </svg>
+        </span>
+        <span class="sr-only">Next</span>
+    </a>
+</section>
+
+
+<section class="u-align-center u-clearfix u-section-1" id="sec-15ad">
+    <div class="u-clearfix u-sheet u-sheet-1">
+        <h2 class="u-text u-text-default u-text-1">Books</h2>
+        <p class="u-text u-text-2">Few books suggested for you to try.</p>
+        <div class="u-expanded-width u-gallery u-layout-horizontal u-lightbox u-show-text-on-hover u-gallery-1" id="carousel-af5e">
+            <div class="u-gallery-inner u-gallery-inner-1" role="listbox">
+                <div class="u-effect-fade u-gallery-item u-gallery-item-1">
+                    <div class="u-back-slide u-back-slide-1">
+                        <img class="u-back-image" src="{% static 'image/books/book (10).JPG' %}" alt="Django For Beginners">
+                    </div>
+                </div>
+                <div class="u-effect-fade u-gallery-item u-gallery-item-2">
+                </div>
+                <div class="u-effect-fade u-gallery-item u-gallery-item-3">
+                    <div class="u-back-slide u-back-slide-3">
+                        <img class="u-back-image" src="{% static 'image/books/book (2).JPG' %}" alt="Python For Beginners">
+                    </div>
+                </div>
+                <div class="u-effect-fade u-gallery-item u-gallery-item-4">
+                    <div class="u-back-slide u-back-slide-4">
+                        <img class="u-back-image" src="{% static 'image/books/book (72).JPG' %}" alt="The Name Of Jesus">
+                    </div>
+                </div>
+                <div class="u-effect-fade u-gallery-item u-gallery-item-5">
+                    <div class="u-back-slide u-back-slide-5">
+                        <img class="u-back-image" src="{% static 'image/books/book (43).JPG' %}" alt="C Programming">
+                    </div>
+                </div>
+                <div class="u-effect-fade u-gallery-item u-gallery-item-6">
+                    <div class="u-back-slide u-back-slide-6">
+                        <img class="u-back-image" src="{% static 'image/books/book (91).JPG' %}" alt="The Secret Language Of Your Name">
+                    </div>
+                </div>
+                <div class="u-effect-fade u-gallery-item u-gallery-item-6">
+                    <div class="u-back-slide u-back-slide-6">
+                        <img class="u-back-image" src="{% static 'image/books/book (79).JPG' %}" alt="House Of Names">
+                    </div>
+                </div>
+                <div class="u-effect-fade u-gallery-item u-gallery-item-6">
+                    <div class="u-back-slide u-back-slide-6">
+                        <img class="u-back-image" src="{% static 'image/books/book (32).JPG' %}" alt="The Secret Language Of Your Name">
+                    </div>
+                </div>
+            </div>
+            <a class="u-absolute-vcenter u-gallery-nav u-gallery-nav-prev u-grey-70 u-icon-circle u-opacity u-opacity-70 u-spacing-10 u-text-white u-gallery-nav-1" href="#" role="button">
+                <span aria-hidden="true">
+                    <svg viewBox="0 0 451.847 451.847">
+                        <path d="M97.141,225.92c0-8.095,3.091-16.192,9.259-22.366L300.689,9.27c12.359-12.359,32.397-12.359,44.751,0
+c12.354,12.354,12.354,32.388,0,44.748L173.525,225.92l171.903,171.909c12.354,12.354,12.354,32.391,0,44.744
+c-12.354,12.365-32.386,12.365-44.745,0l-194.29-194.281C100.226,242.115,97.141,234.018,97.141,225.92z"></path>
+                    </svg>
+                </span>
+                <span class="sr-only">
+                    <svg viewBox="0 0 451.847 451.847">
+                        <path d="M97.141,225.92c0-8.095,3.091-16.192,9.259-22.366L300.689,9.27c12.359-12.359,32.397-12.359,44.751,0
+c12.354,12.354,12.354,32.388,0,44.748L173.525,225.92l171.903,171.909c12.354,12.354,12.354,32.391,0,44.744
+c-12.354,12.365-32.386,12.365-44.745,0l-194.29-194.281C100.226,242.115,97.141,234.018,97.141,225.92z"></path>
+                    </svg>
+                </span>
+            </a>
+            <a class="u-absolute-vcenter u-gallery-nav u-gallery-nav-next u-grey-70 u-icon-circle u-opacity u-opacity-70 u-spacing-10 u-text-white u-gallery-nav-2" href="#" role="button">
+                <span aria-hidden="true">
+                    <svg viewBox="0 0 451.846 451.847">
+                        <path d="M345.441,248.292L151.154,442.573c-12.359,12.365-32.397,12.365-44.75,0c-12.354-12.354-12.354-32.391,0-44.744
+L278.318,225.92L106.409,54.017c-12.354-12.359-12.354-32.394,0-44.748c12.354-12.359,32.391-12.359,44.75,0l194.287,194.284
+c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,248.292z"></path>
+                    </svg>
+                </span>
+                <span class="sr-only">
+                    <svg viewBox="0 0 451.846 451.847">
+                        <path d="M345.441,248.292L151.154,442.573c-12.359,12.365-32.397,12.365-44.75,0c-12.354-12.354-12.354-32.391,0-44.744
+L278.318,225.92L106.409,54.017c-12.354-12.359-12.354-32.394,0-44.748c12.354-12.359,32.391-12.359,44.75,0l194.287,194.284
+c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,248.292z"></path>
+                    </svg>
+                </span>
+            </a>
+        </div>
+    </div>
+</section>
+
+<section class="u-align-left u-clearfix u-section-1" id="sec-3143">
+    <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+        <div class="u-align-center u-container-style u-group u-palette-2-dark-3 u-group-1">
+            <div class="u-container-layout u-valign-middle u-container-layout-1">
+                <h1 class="u-text u-text-default u-text-1">Get notified when we new books arrive.</h1>
+                <a href="#sec-d1c5" class="u-btn u-btn-round u-button-style u-color-scheme-summer-time u-color-style-multicolor-1 u-dialog-link u-palette-2-base u-radius-50 u-btn-1">get notified</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="u-align-center u-black u-clearfix u-container-style u-dialog-block u-opacity u-opacity-70 u-valign-middle u-dialog-section-4" id="sec-d1c5">
+    <div class="u-align-center u-container-style u-dialog u-white u-dialog-1">
+        <div class="u-container-layout u-valign-middle u-container-layout-1">
+            <h6 class="u-text u-text-default u-text-1">Newsletter</h6>
+            <h2 class="u-text u-text-default u-text-2">get notified when new books arrive</h2>
+            <div class="u-expanded-width-xs u-form u-form-1">
+                <form action="https://forms.nicepagesrv.com/v2/form/process" class="u-clearfix u-form-spacing-28 u-form-vertical u-inner-form" style="padding: 0px;" source="email" name="form">
+                    <div class="u-form-email u-form-group u-form-group-1">
+                        <label for="email-a136" class="u-label u-text-grey-30 u-label-1">Email Address</label>
+                        <input type="email" placeholder="" id="email-a136" name="email" class="u-border-1 u-border-grey-30 u-input u-input-rectangle u-white" required="">
+                    </div>
+                    <div class="u-align-center u-form-group u-form-submit u-form-group-2">
+                        <a href="#" class="u-black u-btn u-btn-submit u-button-style u-btn-1">Submit</a>
+                        <input type="submit" value="submit" class="u-form-control-hidden">
+                    </div>
+                    <div class="u-form-send-message u-form-send-success"> Thank you! Your message has been sent. </div>
+                    <div class="u-form-send-error u-form-send-message"> Unable to send your message. Please fix errors then try again. </div>
+                    <input type="hidden" value="" name="recaptchaResponse">
+                    <input type="hidden" name="formServices" value="014549161abe4abff447f9fd75a64092">
+                </form>
+            </div>
+        </div><button class="u-dialog-close-button u-icon u-text-grey-50 u-icon-1"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 413.348 413.348" style="">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-5801"></use>
+            </svg><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" xml:space="preserve" class="u-svg-content" viewBox="0 0 413.348 413.348" id="svg-5801">
+                <path d="m413.348 24.354-24.354-24.354-182.32 182.32-182.32-182.32-24.354 24.354 182.32 182.32-182.32 182.32 24.354 24.354 182.32-182.32 182.32 182.32 24.354-24.354-182.32-182.32z"></path>
+            </svg></button>
+    </div>
+</section>
+
+<section class="u-align-center u-clearfix u-container-align-center-md u-container-align-center-sm u-container-align-center-xs u-image u-section-1" id="carousel_3470" data-image-width="1618" data-image-height="1080">
+    <div class="contact-cont">
+        <div class="u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-form u-form-1">
+            <form action="https://forms.nicepagesrv.com/v2/form/process" class="u-clearfix u-form-spacing-30 u-form-vertical u-inner-form" style="padding: 10px" source="email" name="form">
+                <div class="u-form-email u-form-group u-form-partition-factor-2">
+                    <label for="email-319a" class="u-label u-text-body-alt-color u-label-1">Email</label>
+                    <input type="email" placeholder="Enter a valid email address" id="email-319a" name="email" class="u-border-2 u-border-no-left u-border-no-right u-border-no-top u-border-white u-input u-input-rectangle" required="">
+                </div>
+                <div class="u-form-group u-form-name u-form-partition-factor-2">
+                    <label for="name-319a" class="u-label u-text-body-alt-color u-label-2">Name</label>
+                    <input type="text" placeholder="Enter your Name" id="name-319a" name="name" class="u-border-2 u-border-no-left u-border-no-right u-border-no-top u-border-white u-input u-input-rectangle" required="">
+                </div>
+                <div class="u-form-address u-form-group u-form-group-3">
+                    <label for="address-452f" class="u-label u-text-body-alt-color u-label-3">Address</label>
+                    <input type="text" placeholder="Enter your address" id="address-452f" name="address" class="u-border-2 u-border-no-left u-border-no-right u-border-no-top u-border-white u-input u-input-rectangle" required="">
+                </div>
+                <div class="u-form-group u-form-message">
+                    <label for="message-319a" class="u-label u-text-body-alt-color u-label-4">Message</label>
+                    <textarea placeholder="Enter your message" rows="4" cols="50" id="message-319a" name="message" class="u-border-2 u-border-no-left u-border-no-right u-border-no-top u-border-white u-input u-input-rectangle" required=""></textarea>
+                </div>
+                <div class="u-align-left u-form-group u-form-submit">
+                    <a href="#" class="u-active-white u-border-none u-btn u-btn-round u-btn-submit u-button-style u-hover-white u-palette-2-base u-radius-10 u-btn-1">Submit</a>
+                    <input type="submit" value="submit" class="u-form-control-hidden">
+                </div>
+                <div class="u-form-send-message u-form-send-success"> Thank you! Your message has been sent. </div>
+                <div class="u-form-send-error u-form-send-message"> Unable to send your message. Please fix errors then try again. </div>
+                <input type="hidden" value="" name="recaptchaResponse">
+                <input type="hidden" name="formServices" value="014549161abe4abff447f9fd75a64092">
+            </form>
+        </div>
+        <div class="u-expanded-width-md u-expanded-width-sm u-expanded-width-xs u-list u-list-1">
+            <div class="u-repeater u-repeater-1">
+                <div class="u-align-center u-black u-container-style u-list-item u-opacity u-opacity-45 u-radius-20 u-repeater-item u-shape-round u-list-item-1">
+                    <div class="u-container-layout u-similar-container u-container-layout-1"><span class="u-icon u-icon-circle u-text-palette-2-base u-icon-1"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 52 52" style="">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-077e"></use>
+                            </svg><svg class="u-svg-content" viewBox="0 0 52 52" x="0px" y="0px" id="svg-077e" style="enable-background:new 0 0 52 52;">
+                                <path style="fill:currentColor;" d="M38.853,5.324L38.853,5.324c-7.098-7.098-18.607-7.098-25.706,0h0
+	C6.751,11.72,6.031,23.763,11.459,31L26,52l14.541-21C45.969,23.763,45.249,11.72,38.853,5.324z M26.177,24c-3.314,0-6-2.686-6-6
+	s2.686-6,6-6s6,2.686,6,6S29.491,24,26.177,24z"></path>
+                            </svg></span>
+                        <h5 class="u-text u-text-1">our main office</h5>
+                        <p class="u-text u-text-2">Enugu, Nigeria</p>
+                    </div>
+                </div>
+                <div class="u-align-center u-black u-container-style u-list-item u-opacity u-opacity-45 u-radius-20 u-repeater-item u-shape-round u-list-item-2">
+                    <div class="u-container-layout u-similar-container u-container-layout-2"><span class="u-icon u-icon-circle u-text-palette-2-base u-icon-2"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 513.64 513.64" style="">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-9786"></use>
+                            </svg><svg class="u-svg-content" viewBox="0 0 513.64 513.64" x="0px" y="0px" id="svg-9786" style="enable-background:new 0 0 513.64 513.64;">
+                                <g>
+                                    <g>
+                                        <path d="M499.66,376.96l-71.68-71.68c-25.6-25.6-69.12-15.359-79.36,17.92c-7.68,23.041-33.28,35.841-56.32,30.72    c-51.2-12.8-120.32-79.36-133.12-133.12c-7.68-23.041,7.68-48.641,30.72-56.32c33.28-10.24,43.52-53.76,17.92-79.36l-71.68-71.68    c-20.48-17.92-51.2-17.92-69.12,0l-48.64,48.64c-48.64,51.2,5.12,186.88,125.44,307.2c120.32,120.32,256,176.641,307.2,125.44    l48.64-48.64C517.581,425.6,517.581,394.88,499.66,376.96z"></path>
+                                    </g>
+                                </g>
+                            </svg></span>
+                        <h5 class="u-text u-text-3">phone number</h5>
+                        <p class="u-text u-text-4">+(234) 811-320-8256</p>
+                    </div>
+                </div>
+                <div class="u-align-center u-black u-container-style u-list-item u-opacity u-opacity-45 u-radius-20 u-repeater-item u-shape-round u-list-item-3">
+                    <div class="u-container-layout u-similar-container u-container-layout-3"><span class="u-icon u-icon-circle u-text-palette-2-base u-icon-3"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 512 512" style="">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-d01e"></use>
+                            </svg><svg class="u-svg-content" viewBox="0 0 512 512" id="svg-d01e">
+                                <path d="m201 12.714v184.286h267v-184.286c0-7.022-5.692-12.714-12.714-12.714h-241.572c-7.022 0-12.714 5.692-12.714 12.714zm63.89 33.131h70.271c8.284 0 15 6.716 15 15s-6.716 15-15 15h-70.271c-8.284 0-15-6.716-15-15s6.715-15 15-15zm0 75.142h139.22c8.284 0 15 6.716 15 15s-6.716 15-15 15h-139.22c-8.284 0-15-6.716-15-15s6.715-15 15-15z"></path>
+                                <path d="m472 227h-275c-22.091 0-40 17.909-40 40v205c0 22.091 17.909 40 40 40h275c22.091 0 40-17.909 40-40v-205c0-22.091-17.909-40-40-40zm-207.5 217.5h-20c-8.284 0-15-6.716-15-15s6.716-15 15-15h20c8.284 0 15 6.716 15 15s-6.716 15-15 15zm0-60h-20c-8.284 0-15-6.716-15-15s6.716-15 15-15h20c8.284 0 15 6.716 15 15s-6.716 15-15 15zm0-60h-20c-8.284 0-15-6.716-15-15s6.716-15 15-15h20c8.284 0 15 6.716 15 15s-6.716 15-15 15zm80 120h-20c-8.284 0-15-6.716-15-15s6.716-15 15-15h20c8.284 0 15 6.716 15 15s-6.716 15-15 15zm0-60h-20c-8.284 0-15-6.716-15-15s6.716-15 15-15h20c8.284 0 15 6.716 15 15s-6.716 15-15 15zm0-60h-20c-8.284 0-15-6.716-15-15s6.716-15 15-15h20c8.284 0 15 6.716 15 15s-6.716 15-15 15zm80 120h-20c-8.284 0-15-6.716-15-15s6.716-15 15-15h20c8.284 0 15 6.716 15 15s-6.716 15-15 15zm0-60h-20c-8.284 0-15-6.716-15-15s6.716-15 15-15h20c8.284 0 15 6.716 15 15s-6.716 15-15 15zm0-60h-20c-8.284 0-15-6.716-15-15s6.716-15 15-15h20c8.284 0 15 6.716 15 15s-6.716 15-15 15z"></path>
+                                <path d="m87 227h-47c-22.091 0-40 17.909-40 40v205c0 22.091 17.909 40 40 40h47c22.091 0 40-17.909 40-40v-205c0-22.091-17.909-40-40-40z"></path>
+                            </svg></span>
+                        <h5 class="u-text u-text-5">Fax</h5>
+                        <p class="u-text u-text-6">0811-320-8256</p>
+                    </div>
+                </div>
+                <div class="u-align-center u-black u-container-style u-list-item u-opacity u-opacity-45 u-radius-20 u-repeater-item u-shape-round u-list-item-4">
+                    <div class="u-container-layout u-similar-container u-container-layout-4"><span class="u-icon u-icon-circle u-text-palette-2-base u-icon-4"><svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 512 512" style="">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-9f82"></use>
+                            </svg><svg class="u-svg-content" viewBox="0 0 512 512" x="0px" y="0px" id="svg-9f82" style="enable-background:new 0 0 512 512;">
+                                <g>
+                                    <g>
+                                        <path d="M507.49,101.721L352.211,256L507.49,410.279c2.807-5.867,4.51-12.353,4.51-19.279V121    C512,114.073,510.297,107.588,507.49,101.721z"></path>
+                                    </g>
+                                </g>
+                                <g>
+                                    <g>
+                                        <path d="M467,76H45c-6.927,0-13.412,1.703-19.279,4.51l198.463,197.463c17.548,17.548,46.084,17.548,63.632,0L486.279,80.51    C480.412,77.703,473.927,76,467,76z"></path>
+                                    </g>
+                                </g>
+                                <g>
+                                    <g>
+                                        <path d="M4.51,101.721C1.703,107.588,0,114.073,0,121v270c0,6.927,1.703,13.413,4.51,19.279L159.789,256L4.51,101.721z"></path>
+                                    </g>
+                                </g>
+                                <g>
+                                    <g>
+                                        <path d="M331,277.211l-21.973,21.973c-29.239,29.239-76.816,29.239-106.055,0L181,277.211L25.721,431.49    C31.588,434.297,38.073,436,45,436h422c6.927,0,13.412-1.703,19.279-4.51L331,277.211z"></path>
+                                    </g>
+                                </g>
+                            </svg></span>
+                        <h5 class="u-text u-text-7">Email</h5>
+                        <p class="u-text u-text-8">
+                            <a href="mailto:hello@theme.com" class="u-active-none u-border-1 u-border-active-white u-border-hover-white u-border-no-left u-border-no-right u-border-no-top u-border-palette-2-base u-btn u-button-link u-button-style u-hover-none u-none u-text-active-white u-text-hover-white u-text-palette-2-base u-btn-2">ifeanyionyekwelu786@gmail.com</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    .u-dialog-section-4 .u-dialog-1 {
+        width: 566px;
+        min-height: 431px;
+        margin: 60px auto;
+    }
+
+    .u-dialog-section-4 .u-container-layout-1 {
+        padding: 40px 30px;
+    }
+
+    .u-dialog-section-4 .u-text-1 {
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        margin: 0 auto;
+    }
+
+    .u-dialog-section-4 .u-text-2 {
+        font-size: 2.5rem;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin: 21px auto 0;
+    }
+
+    .u-dialog-section-4 .u-form-1 {
+        height: 104px;
+        width: 400px;
+        margin: 19px auto 0;
+    }
+
+    .u-dialog-section-4 .u-form-group-1 {
+        width: 100%;
+    }
+
+    .u-dialog-section-4 .u-label-1 {
+        font-size: 1rem;
+    }
+
+    .u-dialog-section-4 .u-form-group-2 {
+        width: 100%;
+    }
+
+    .u-dialog-section-4 .u-btn-1 {
+        padding-left: 60px;
+        padding-right: 60px;
+        background-image: none;
+        border-style: none;
+        text-transform: none;
+        width: 100%;
+    }
+
+    .u-dialog-section-4 .u-icon-1 {
+        width: 15px;
+        height: 15px;
+        left: auto;
+        top: 17px;
+        position: absolute;
+        right: 16px;
+    }
+
+    @media (max-width: 991px) {
+        .u-dialog-section-4 .u-container-layout-1 {
+            padding-bottom: 30px;
+        }
+    }
+
+    @media (max-width: 767px) {
+        .u-dialog-section-4 .u-dialog-1 {
+            width: 540px;
+        }
+
+        .u-dialog-section-4 .u-container-layout-1 {
+            padding-top: 30px;
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+    }
+
+    @media (max-width: 575px) {
+        .u-dialog-section-4 .u-dialog-1 {
+            width: 340px;
+            min-height: 400px;
+            height: auto;
+        }
+
+        .u-dialog-section-4 .u-container-layout-1 {
+            padding-top: 40px;
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+
+        .u-dialog-section-4 .u-text-2 {
+            font-size: 2.125rem;
+        }
+
+        .u-dialog-section-4 .u-form-1 {
+            height: 152px;
+            margin-right: initial;
+            margin-left: initial;
+            width: auto;
+        }
+    }
+</style>
+
+<section class="u-align-center u-clearfix u-section-1" id="sec-8450">
+    <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+        <h2 class="u-text u-text-default u-text-1">Facts &amp; Questions</h2>
+        <p class="u-text u-text-2">Have any questions, maybe you can find answers below.</p>
+        <div class="u-accordion u-expanded-width u-faq u-spacing-10 u-accordion-1">
+            <div class="u-accordion-item">
+                <a class="active u-accordion-link u-active-grey-60 u-button-style u-grey-70 u-hover-grey-60 u-radius-15 u-accordion-link-1" id="link-accordion-f600" aria-controls="accordion-f600" aria-selected="true">
+                    <span class="u-accordion-link-text">Can I download books?&nbsp;</span>
+                </a>
+                <div class="u-accordion-active u-accordion-pane u-container-style u-shape-rectangle u-accordion-pane-1" id="accordion-f600" aria-labelledby="link-accordion-f600">
+                    <div class="u-container-layout u-container-layout-1">
+                        <div class="fr-view u-clearfix u-rich-text u-text">
+                            <p>Answer. NO, you can only add a book to your shelf and the book can be read while using the site</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="u-accordion-item">
+                <a class="u-accordion-link u-active-grey-60 u-button-style u-grey-70 u-hover-grey-60 u-radius-15 u-accordion-link-2" id="link-accordion-72f4" aria-controls="accordion-72f4" aria-selected="false">
+                    <span class="u-accordion-link-text">Can I take the same book more than once?&nbsp;</span>
+                </a>
+                <div class="u-accordion-pane u-container-style u-shape-rectangle u-accordion-pane-2" id="accordion-72f4" aria-labelledby="link-accordion-72f4">
+                    <div class="u-container-layout u-container-layout-2">
+                        <div class="fr-view u-clearfix u-rich-text u-text">
+                            <p>Answer. NO, unless the previous book collected hass missing pages taking the same book again will be allowed. Apart from that no user can take the same book more than once.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="u-accordion-item">
+                <a class="u-accordion-link u-active-grey-60 u-button-style u-grey-70 u-hover-grey-60 u-radius-15 u-accordion-link-3" id="link-accordion-854e" aria-controls="accordion-854e" aria-selected="false">
+                    <span class="u-accordion-link-text">Maximum book to have in a shelf</span>
+                </a>
+                <div class="u-accordion-pane u-container-style u-shape-rectangle u-accordion-pane-3" id="accordion-854e" aria-labelledby="link-accordion-854e">
+                    <div class="u-container-layout u-container-layout-3">
+                        <div class="fr-view u-clearfix u-rich-text u-text">
+                            <p>Answer. The maximum number of books a user can have in their shelf is 5. If you need to take more books after having 5 books in your shelf you will need to return a book or 2 or the amount required.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock content %}

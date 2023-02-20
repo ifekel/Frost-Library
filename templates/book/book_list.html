@@ -1,0 +1,16 @@
+{% extends '_base.html' %}
+
+{% load static %}
+
+{% block title %}Books{% endblock title %}
+
+{% block content %}
+
+{% include '_navbar.html' %}
+
+{% for book in books %}
+
+<h1>{{ book.title }}</h1>
+
+{% endfor %}
+{% endblock content %}

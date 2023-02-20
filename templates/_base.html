@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frost Library | {% block title %}{% endblock title %}</title>
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'bootstrap-icons/bootstrap-icons.css' %}">
+    <link rel="stylesheet" href="{% static 'css/nicepage.css' %}">
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+</head>
+
+<body>
+    {% block content %}
+
+    {% endblock content %}
+
+    {% block javascript %}
+    <link rel="stylesheet" href="{% static 'bootstrap/js/bootstrap.bundle.min.js' %}">
+    <script src="{% static 'js/jquery.js' %}"></script>
+    <script src="{% static 'js/nicepage.js' %}"></script>
+    <script src="{% static 'js/base.js' %}"></script>
+    {% endblock javascript %}
+</body>
+
+</html>
