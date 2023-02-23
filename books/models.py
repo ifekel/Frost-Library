@@ -10,9 +10,10 @@ class Book(models.Model):
     )
     title = models.CharField(max_length=255)
     author = models.CharField(max_length=255)
+    image = models.ImageField(null=True, blank=True)
     about = models.TextField()
     pages = models.PositiveIntegerField()
-    ratings = models.PositiveIntegerField()
+    ratings = models.DecimalField(max_digits=2, decimal_places=1)
     
     def __str__(self):
         return self.title
